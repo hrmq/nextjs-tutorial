@@ -12,6 +12,7 @@ export default function Home() {
   return (
     <>
       <div>Home</div>
+      <h1>Next.JS pre-rendering</h1>
       <Link href='/blog'>Blog</Link><br/>
       <Link href='/product'>Product</Link><br />
       <button onClick={handleClick}>
