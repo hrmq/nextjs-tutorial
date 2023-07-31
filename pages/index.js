@@ -15,6 +15,7 @@ export default function Home() {
       <h1>Next.JS pre-rendering</h1>
       <Link href='/blog'>Blog</Link><br/>
       <Link href='/product'>Product</Link><br />
+      <Link href='/posts'>Posts</Link>
       <button onClick={handleClick}>
         Place Order
       </button>
