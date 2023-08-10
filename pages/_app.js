@@ -3,9 +3,9 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import { ThemeProvider} from 'styled-components'
 import Head from 'next/head'
 
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
-import '../styles/layout.css'
+import Header from '@/layout/Header'
+import Footer from '@/layout/Footer'
+import 'styles/layout.css'
 
 const theme = {
   color: {
