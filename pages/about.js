@@ -1,9 +1,9 @@
-import styles from '@/styles/About.module.css'
+import styles from '@/styles/About.module.scss'
 
 export default function About() {
   return (
     <div>
-      <div className={styles.highlight}> About Page </div>
+      <div className={styles.highLightScss}> About Page </div>
       <button className='btn btn-success'>Primary</button>
     </div>
   )
