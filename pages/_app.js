@@ -2,6 +2,10 @@ import '@/styles/globals.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { ThemeProvider} from 'styled-components'
 
+import Header from '@/components/Header'
+import Footer from '@/components/Footer'
+import '../styles/layout.css'
+
 const theme = {
   color: {
     primary: '#355C7D'
@@ -9,5 +13,16 @@ const theme = {
 }
 
 export default function App({ Component, pageProps }) {
-  return <ThemeProvider theme={theme}><Component {...pageProps} /></ThemeProvider>
+  if (Component.getLayout) {
+    return Component.getLayout(<Component {...pageProps} />)
+  }
+  return (
+    <>
+      <Header />
+      <ThemeProvider theme={theme}>
+        <Component {...pageProps} />
+      </ThemeProvider>
+      <Footer />
+    </>
+  )
 }
