@@ -1,6 +1,9 @@
+import Navbar from "../Navbar"
 
 export default function Header() {
   return (
-    <div className="layout-header">Header</div>
+    <div className="layout-header">
+      <Navbar />
+    </div>
   )
 }

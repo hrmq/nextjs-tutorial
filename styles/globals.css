@@ -109,3 +109,26 @@ a {
     color-scheme: dark;
   }
 }
+
+ul {
+  margin: 0;
+  padding: 1em;
+  list-style: none;
+}
+
+h2,
+h3,
+a {
+  color: #34495e;
+}
+
+
+.logo {
+  margin: 0;
+  font-size: 1.45em;
+}
+
+.main-nav {
+  display: flex;
+  margin-top: 5px;
+}
