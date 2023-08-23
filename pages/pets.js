@@ -1,7 +1,14 @@
 import Image from "next/image"
 import img from '../public/images/1.jpg'
+import { useSession, signIn} from "next-auth/react"
 
 export default function PetsPage() {
+  const { status } = useSession({
+    required: true,
+    onUnauthenticated() {
+        signIn()
+    }
+  })
   return (
     <div>
         {/* blurDataUrl */}
